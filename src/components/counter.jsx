@@ -28,7 +28,8 @@ class Counter extends Component {
   }
 
   formatCount() {
-    return this.props.counter === 0 ? "Zero" : this.props.counter;
+    const { value } = this.props.counter;
+    return value === 0 ? "Zero" : value;
   }
 }
 
